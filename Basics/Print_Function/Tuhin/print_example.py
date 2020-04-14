@@ -44,3 +44,18 @@ print('Hello, ' + os.getlogin() + '! How are you?')
 
 #In fact, there are a dozen ways to format messages in Python. I highly encourage you to take a look at f-strings, introduced in Python 3.6, because they offer the most concise syntax of them all:
 print(f'Hello, {os.getlogin()}! How are you?')
+#Separating Multiple Arguments
+#Default separator is space
+print('My name is', os.getlogin(), 'and I am', 42)
+#Concatenate String in print
+print('Tuhin'+'Chandra')
+#TypeError: can only concatenate str (not "int") to str
+#print('Tuhin'+42)
+print('Tuhin','Chandra',sep='')
+print('Tuhin', 'Chandra', sep='\n')
+#Be careful about joining elements of a list or tuple.
+#Doing it manually will result in a well-known TypeError if at least one of the elements isn’t a string:
+#print(' '.join(['jdoe is', 42, 'years old']))
+print('\t'.join(['Tuhin', 'is', '29', 'years', 'old']))
+#It’s safer to just unpack the sequence with the star operator (*) and let print() handle type casting
+print(*['Tuhin is', 29, 'years old'])
