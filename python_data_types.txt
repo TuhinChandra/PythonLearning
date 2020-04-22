@@ -1,0 +1,311 @@
+Numbers
+
+5+2
+7
+
+5/3
+1.6666666666666667
+
+4-1
+3
+
+9*2
+18
+
+7/4
+1.75
+
+7%4
+3
+
+50%5
+0
+
+23%2
+1
+
+20%2
+0
+
+2**2
+4
+
+2**4
+16
+1 + 12 * 23 - 76/23
+273.69565217391306
+
+(2**3) + (3**3)
+35
+
+0.1+0.2-0.3
+5.551115123125783e-17
+
+1/2
+0.5
+
+Variable Assignments
+
+my_no = 10
+print(my_no)
+10
+
+my_no = 100
+print(my_no)
+100
+
+my_no = "Re-Assignment"
+print(my_no)
+
+Re-Assignment
+int my_no2 = 1
+
+  File "<ipython-input-22-b7bd231387f6>", line 1
+    int my_no2 = 1
+             ^
+SyntaxError: invalid syntax
+
+
+int my_no2 = 1;
+
+  File "<ipython-input-23-c84956997b65>", line 1
+    int my_no2 = 1;
+             ^
+SyntaxError: invalid syntax
+
+
+type(my_no)
+str
+
+my_no2 = 100
+print(my_no2)
+100
+
+type(my_no2)
+int
+my_no2 = "Assign a string"
+
+print(my_no2)
+
+Assign a string
+
+type(my_no2)
+str
+a=5
+a
+5
+
+a=10
+a
+10
+
+a + a
+20
+
+a = a + a
+a
+20
+
+a
+20
+a = a + a
+
+a
+40
+
+type(a)
+float
+
+a = 30.1
+a
+30.1
+
+type(a)
+float
+
+int = 4
+my_income = 100
+tax_rate = 0.1
+my_tax = my_income * tax_rate
+my_tax
+10.0
+String
+
+'hello'
+'hello'
+"world"
+'world'
+'this is also a string'
+'this is also a string'
+"I don't do that"
+"I don't do that"
+'I don't do that
+  File "<ipython-input-7-1c5519cb407a>", line 1
+    'I don't do that
+           ^
+SyntaxError: invalid syntax
+
+
+print("hello")
+hello
+"line 1"
+"line2"
+'line2'
+print("line1")
+print("line2")
+line1
+line2
+print('hello world')
+hello world
+print('hello \n world')
+hello 
+ world
+print('hello \n\t\t\t world')
+hello 
+			 world
+len('hello')
+5
+len('I am Sunayana')
+13
+#Indexing and Slicing
+
+mystring = "Hello World"
+mystring
+'Hello World'
+mystring[0]
+'H'
+mystring[4]
+'o'
+mystring[8]
+'r'
+mystring[9]
+'l'
+mystring[-3]
+'r'
+mystring[2]
+'l'
+mystring[-2]
+'l'
+mystring[-1]
+'d'
+mystring
+'Hello World'
+teststr = "abcdefghijkl"
+teststr
+'abcdefghijkl'
+teststr[2]
+'c'
+teststr[2:]
+'cdefghijkl'
+teststr[:]
+'abcdefghijkl'
+teststr[:3]
+'abc'
+teststr
+'abcdefghijkl'
+teststr[4:8]
+'efgh'
+teststr[::]
+'abcdefghijkl'
+teststr[::2]
+'acegik'
+teststr[1:9:3]
+'beh'
+teststr[::-1]
+teststr[::-1]
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-374b9ace4c15> in <module>
+----> 1 teststr[::-1]
+
+NameError: name 'teststr' is not defined
+
+teststr = "abcdefghijkl"
+teststr[::-1]
+'lkjihgfedcba'
+Immutability
+
+Sunayana
+name = 'Sunayana'
+name[0]
+'S'
+M
+name[0]='M'
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-6-31dcf01be15e> in <module>
+----> 1 name[0]='M'
+
+TypeError: 'str' object does not support item assignment
+
+1::
+last = name[1::]
+last
+last
+'unayana'
+new_name='M'+ last
+new_name
+new_name
+'Munayana'
+x = 'Hello World'
+y = ' Weather is fine'
+x+y
+'Hello World Weather is fine'
+x = x + y
+x
+'Hello World Weather is fine Weather is fine'
+x
+'Hello World Weather is fine Weather is fine'
+letter = 's'
+letter*12
+'ssssssssssss'
+5+6
+11
+'5'+'6'
+'56'
+x = 'Hello World'
+x.upper()
+'HELLO WORLD'
+x
+x
+'Hello World'
+x.upper
+x.upper
+<function str.upper()>
+x.lower()
+'hello world'
+x.split()
+['Hello', 'World']
+!!
+y = "hello, how are you!!"
+y.split()
+['hello,', 'how', 'are', 'you!!']
+,
+y.split(',')
+['hello', ' how are you!!']
+ello
+print('hello')
+hello
+a
+my_name = "Spriha"
++my_name
+print("Hello "+my_name)
+Hello Spriha
+INSERTED
+print("this is the string {}".format("INSERTED"))
+this is the string INSERTED
+print("The {} {} {}".format("Lalu","Gulu","Vulu"))
+print("The {} {} {}".format("Lalu","Gulu","Vulu"))
+The Lalu Gulu Vulu
+0
+print("The {2} {1} {0}".format("Lalu","Gulu","Vulu"))
+The Vulu Gulu Lalu
+0
+print("The {0} {0} {0}".format("Lalu","Gulu","Vulu"))
+The Lalu Lalu Lalu
+print("The {g} {l} {v}".format(l="Lalu",g="Gulu",v="Vulu"))
+The Gulu Lalu Vulu
+g
+print("The {g} {g} {g}".format(l="Lalu",g="Gulu",v="Vulu"))
+The Gulu Gulu Gulu
+
